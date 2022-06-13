@@ -1,0 +1,29 @@
+## Discussion
+
+Hypothesis \@ref(hyp:anecdote-similarity-2) was supported because participants
+showed a stronger anecdotal bias effect when anecdotes had greater similarity to
+the target project and effect did not depend on valence. This was the same
+finding as Experiment 1 despite the instructions making it clear that the
+anecdote was not significantly more similar to the target project than the other
+projects in the aggregated data. Further, as per
+Hypothesis \@ref(hyp:statistics-anecdotes-2), participants incorporated
+statistical information in their judgements. As per
+Hypotheses \@ref(hyp:anecdote-similarity-valence-interaction-2)
+and \@ref(hyp:statistics-valence-interaction-2), both the anecdotal bias effect
+and effect of statistics did not depend on anecdote valence. Unlike in
+Experiment 1, the relevance rating data did not provide as clear indication that
+participants were using only the specific project information rather than merely
+its industry.
+
+Therefore, Experiment 2 found that participants use anecdote similarity in their
+decisions but not information about the relative similarity of the anecdote to
+the rest of the data. That is, participants seem to be considering only one
+factor for optimal anecdote use but not the other. Further, unlike in the
+medical domain, the effect of anecdotes in financial decision-making does not
+depend on anecdote valence. The lack of asymmetry between valence conditions is
+surprising given the effect of loss aversion on people’s decisions
+[@kahneman1979]. This is discussed further in the General Discussion. Further,
+similar to the findings of Experiment 1, and as in those of @wainberg2013, the
+anecdotal bias effect does not appear to be complete, with statistics still
+playing some role in participants' decisions, despite the effect of the
+anecdote.

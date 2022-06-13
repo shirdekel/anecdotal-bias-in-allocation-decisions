@@ -1,0 +1,194 @@
+## Method {#method-1}
+### Transparency and openness
+
+```{r, r-packages}
+papaja::r_refs(file = "r-references.bib")
+my_citations <- papaja::cite_r(
+  file = "r-references.bib",
+  footnote = TRUE
+  )
+```
+
+We report how we determined our sample size, all data exclusions, all
+manipulations, and all measures in the study. All data, analysis code, and
+research materials are available at
+https://github.com/shirdekel/anecdotal-bias-in-allocation-decisions
+[@dekel2022]. This study's design and its analysis were not pre-registered. The
+article used R [Version 4.2.0\; @R-base] [^papaja_pkg_citations] to analyse and
+plot the data, generate the experimental materials, and compile the document
+itself. This study received approval by The University of Sydney Human Research
+Ethics Committee (HREC; Project No.: 2019/056).
+
+`r my_citations$pkgs`
+
+### Participants
+
+`r descriptives_1$apa` Three participants were removed from the data because
+they reported being younger than 18.
+Table \@ref(tab:condition-allocation-1) shows the allocation of
+participants to the different conditions.
+Appendix \@ref(power-analysis-1) describes the power analysis
+conducted to arrive at this sample size.
+
+```{r condition-allocation-1}
+descriptives_1$condition_allocation_table %>%
+  apa_table("Experiment 1 group allocation.")
+```
+
+### Materials {#materials-1}
+
+#### Instructions {#instructions-materials-1}
+
+All participants were first shown general instructions explaining the task.
+Subsequent instructions shown to participants depended on their experimental
+condition. Those in the anecdote only condition were told that they would be
+shown a case study of a failed project and an analysis of why it failed. Those
+in the statistics only condition were told that they would be shown NPV and
+reliability information for two focal projects. They were told that these values
+were sourced from a study with a large sample. Those in the anecdote &
+statistics condition were shown both of these instructions and were also told
+that the information in the anecdote had been included in the aggregated study
+data. Those in the anecdote & enhanced statistics condition were shown the same
+instructions as those in the anecdote & statistics condition, but were also
+provided with the explanation of scientific thinking used by @wainberg2018.
+Appendix \@ref(instructions-materials-1-appendix) shows the
+instructions used in Experiment 1.
+
+#### Allocation Task
+
+In the allocation task, participants were asked to allocate a hypothetical
+budget to one of two projects from two different businesses. In this study,
+these projects are referred to as the *focal* projects, with one being the
+*target* project and the other the *comparison* project. The target project was
+used as the reference for the similarity manipulation. That is, the anecdote was
+either high or low in similarity to the target project. Further, the data
+analyses presented in the Results section used allocations to the target project
+as the dependent variable. The comparison project was simply the other focal
+project to which participants were allocating. It was a different type of
+project to both the target and anecdote projects and was the same for all
+participants.
+
+Participants were presented with information about the name, location,
+integration (vertical or horizontal)[^integration], and organisational structure
+(centralised or decentralised)[^structure] of each business. Further, they were
+presented with information about the features of each project that are typically
+available to managers prior to investment. Participants in the anecdote only
+condition were shown only this information (see
+Figure \@ref(fig:allocation-anecdote-only-1)). Those
+in the anecdote & statistics, anecdote & enhanced statistics, and statistics
+only conditions were shown this information along with measures of NPV and
+overall reliability rating (see
+Figure \@ref(fig:allocation-statistics-1)). The
+overall reliability rating was created for the purpose of the experiment and
+always varied alongside NPV. That is, overall reliability rating and NPV for the
+target project were always both either higher or lower than the comparison
+project. Participants entered their allocation data beneath this table in two
+text boxes labelled *Project A allocation* and *Project B allocation*,
+respectively.
+
+[^integration]: A horizontally integrated company is one which is made up of
+multiple businesses that operate in similar markets, and may have previously
+been competitors [@gaughan2012]. A vertically integrated company, on the other
+hand, is one which is made up of multiple business than operate in the same
+market, but in different levels of the supply chain [@gaughan2012a].
+
+[^structure]: A centralised organisational structure is one in which a company
+decisions tend to come from a specific business unit or leader, whereas a
+decentralised structure is one in which decisions can be made by separate units
+or people independently [@kenton2021].
+
+(ref:allocation-anecdote-only-1) Focal project display for the anecdote only condition in Experiment 1. Here, Project A was the target project and Project B was the comparison project.
+
+```{r allocation-anecdote-only-1, fig.cap = "(ref:allocation-anecdote-only-1)"}
+file.path(
+  materials_1,
+  "project_allocation_anecdote_only.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:allocation-statistics-1) Focal project display for the statistics only, anecdote & statistics, and anecdote & enhanced statistics conditions in Experiment 1. Here, Project A was the target project and Project B was the comparison project.
+
+```{r allocation-statistics-1, out.width = "95%", fig.cap = "(ref:allocation-statistics-1)"}
+file.path(
+  materials_1,
+  "project_allocation_statistics.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+#### Anecdote
+
+Participants who were presented with an anecdote (those in either the anecdote
+only, anecdote & statistics, or anecdote & enhanced statistics conditions) were
+shown a description of another business project and an accompanying analysis.
+Figures \@ref(fig:anecdote-similarity-high-1)
+and \@ref(fig:anecdote-similarity-low-1) show the anecdotes
+for those in the high and low similarity conditions, respectively. The project
+description had a similar layout to that of the focal projects. That is, it
+contained information about the business name, location, integration, and
+organisational structure of the business. It also detailed several predicted
+features of the project. Beneath this description was a paragraph presenting an
+analysis of why the project had failed. This paragraph referenced each of the
+features in the description to justify the failure of the project.
+
+
+Participants in the high similarity condition were shown a description of a
+project from a business with the same type of investment as the target project
+(Project A). All categorical attributes (e.g., location) were identical to those
+in Project A, but all numerical attributes (e.g., oil extraction rate) were
+lower. The analysis explained that the numerical attributes had failed because
+they had not reached certain cut-offs. Critically, these cut-offs were all
+higher than the matching values in Project A. This was done to ensure that the
+numerical attributes in the anecdote appeared more relevant than those in
+Project A. For instance, in Project A, oil extraction was set at 2,200 L/hr, and
+in the anecdote it was 2,000 L/hr, while the cut-off was set at 3,000 L/hr.
+Thus, the failure of the anecdotal project arising from insufficient oil
+extraction would appear more relevant to the Project A because the oil
+extraction in both the anecdotal project and Project A was lower than the
+cut-off value. Note, however, that the participants did not receive an explicit
+indication of whether these values were meant to generalise to other cases. This
+means that any such inference would indicate that participants were sensitive to
+the relational similarity between the two projects, and not just the surface
+similarity of the project type.
+
+(ref:anecdote-similarity-high-1) Anecdote for participants in the high similarity condition in Experiment 1.
+
+```{r anecdote-similarity-high-1, fig.cap = "(ref:anecdote-similarity-high-1)"}
+file.path(
+  materials_1,
+  "anecdote_similarity_high.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:anecdote-similarity-low-1) Anecdote for participants in the low similarity condition in Experiment 1.
+
+```{r anecdote-similarity-low-1, fig.cap = "(ref:anecdote-similarity-low-1)"}
+file.path(
+  materials_1,
+  "anecdote_similarity_low.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+#### Follow-up Questions
+
+Participants who were shown the anecdote were subsequently presented with
+follow-up questions. They were asked about how similar they believed the
+anecdote was to the target project, how relevant it was to their allocations and
+how relevant it would be for their judgements about other projects of that type
+(see Appendix \@ref(follow-up-materials-1)).
+
+### Procedure
+
+Participants were introduced to the study through the general instructions
+followed by the specific instructions for their condition. Participants were
+then presented with the allocation task and a description of the focal projects.
+All participants except those in the statistics only condition were also
+presented with the anecdote description and analysis, and the follow-up
+questions.

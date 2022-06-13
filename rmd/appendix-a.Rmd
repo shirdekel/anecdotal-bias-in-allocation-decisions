@@ -1,0 +1,134 @@
+# Experiment 1
+
+## Power Analysis {#power-analysis-1}
+
+The sample size for Experiment 1 was determined by conducting power analyses
+using the `Superpower` package [@lakens2019]. The package uses experimental
+design, and predicted means and standard deviation, to conduct a priori power
+calculations. Data from @wainberg2018, @jaramillo2019, and @hoeken2009 [Study 3]
+was used to determine realistic means and standard deviations for the evidence
+and similarity factors. According to the power functions, the resulting sample
+size is assumed to allow for an expected power of at least 80%.
+
+Data from @wainberg2018 were used to determine the predicted means for the
+anecdote conditions. Specifically, the values for the high similarity condition
+were taken from the anecdote & statistics, anecdote & enhanced statistics, and
+statistics only conditions for the corresponding anecdote conditions. This was
+done because in @wainberg2018 the anecdote was always of a similar case.
+@wainberg2018 did not use an anecdote only condition, but @wainberg2013 did and
+found no significant differences between the anecdote only condition and the
+anecdote & statistics condition. As such, the same mean value was used for both
+conditions.
+
+It was hypothesised that there will only be an effect of similarity for the
+anecdote only and anecdote & statistics conditions. As such, the data from
+@hoeken2009 [Study 3] were used to determine the corresponding mean values for
+the low similarity condition. Specifically, each predicted mean was multiplied
+by the Cohen's $d_z$ of the similarity effect in @hoeken2009 [Study 3].
+
+To determine the predicted standard deviation, the data from @jaramillo2019
+[Experiment 2] and @hoeken2009 [Study 3] were re-analysed to determine the
+coefficient of variation (CV) of each condition. Each CV was then converted to a
+standard deviation value in the relevant scale by multiplying the mean of the CV
+values by the predicted means from above.
+
+As shown in Figure \@ref(fig:power-analysis-1), the power analysis
+suggested that a minimum sample size of `r anecdotes1::power$n_total`
+(`r anecdotes1::power$n` $\cdot$ 7) is required for the interaction effect with
+an expected power of at least 80%.
+
+(ref:power-analysis-1) Power curves for the similarity and anecdote effects.
+
+```{r power-analysis-1, fig.cap = "(ref:power-analysis-1)"}
+anecdotes1::power$plot_ANOVA
+```
+
+## Instructions {#instructions-materials-1-appendix}
+
+Figure \@ref(fig:general-instructions-1) shows the general
+instructions all participants received, and
+Figures \@ref(fig:specific-instructions-anecdote-only-1), \@ref(fig:specific-instructions-combined-1), \@ref(fig:specific-instructions-enhanced-1),
+and \@ref(fig:specific-instructions-statistics-only-1) show
+the condition-specific instructions.
+
+(ref:general-instructions-1) Experiment 1 general instructions. The two boxes were split between two separate web-pages.
+
+```{r general-instructions-1, fig.cap = "(ref:general-instructions-1)"}
+general_instructions_1 <- file.path(
+  materials_1,
+  "general_instructions_1.png"
+) %>%
+  image_read()
+
+general_instructions_2 <- file.path(
+  materials_1,
+  "general_instructions_2.png"
+) %>%
+  image_read()
+
+c(
+  general_instructions_1,
+  general_instructions_2
+) %>%
+  image_trim() %>%
+  image_append(stack = TRUE)
+```
+
+(ref:specific-instructions-anecdote-only-1) Experiment 1 specific instructions for those in the anecdotes only condition.
+
+```{r specific-instructions-anecdote-only-1, fig.cap = "(ref:specific-instructions-anecdote-only-1)"}
+file.path(
+  materials_1,
+  "specific_instructions_anecdote_condition_anecdote_only.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-combined-1) Experiment 1 specific instructions for those in the anecdote & statistics condition.
+
+```{r specific-instructions-combined-1, fig.cap = "(ref:specific-instructions-combined-1)"}
+file.path(
+  materials_1,
+  "specific_instructions_anecdote_condition_combined.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-enhanced-1) Experiment 1 specific instructions for those in the anecdote & enhanced statistics condition.
+
+```{r specific-instructions-enhanced-1, fig.cap = "(ref:specific-instructions-enhanced-1)"}
+file.path(
+  materials_1,
+  "specific_instructions_anecdote_condition_enhanced.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-statistics-only-1) Experiment 1 specific instructions for those in the statistics only condition.
+
+```{r specific-instructions-statistics-only-1, fig.cap = "(ref:specific-instructions-statistics-only-1)"}
+file.path(
+  materials_1,
+  "specific_instructions_anecdote_condition_statistics_only.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+## Follow-up {#follow-up-materials-1}
+
+Figure \@ref(fig:follow-up-1) shows the follow-up questions.
+
+(ref:follow-up-1) Follow-up questions in Experiment 1.
+
+```{r follow-up-1, fig.cap = "(ref:follow-up-1)"}
+file.path(
+  materials_1,
+  "follow_up.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```

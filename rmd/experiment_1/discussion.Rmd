@@ -1,0 +1,57 @@
+## Discussion
+
+Hypothesis \@ref(hyp:anecdote-similarity-anecdotes-1) was supported.
+Participants in the anecdote & statistics condition allocated less capital to
+the target project compared with those in the statistics only condition.
+However, the novel finding was that this effect depended on anecdote similarity
+because this only occurred in the high similarity condition, not in the low
+similarity condition. Thus, while anecdotal bias was evident when the anecdote
+was similar to the target project, participants were not influenced when the
+causal mechanisms did not align. Congruent with
+Hypothesis \@ref(hyp:statistics-anecdotes-1), despite being influenced by the
+anecdote, participants still made some use of the statistics. This is similar to
+and replicates the finding of @wainberg2013.
+Hypothesis \@ref(hyp:enhanced-statistics-anecdotes-1) was also not supported
+because the added enhanced statistical instructions used to encourage
+participants to use the statistical information did not reduce participants'
+reliance on anecdotes. It is important to identify ways of reducing anecdote use
+for situations in which it is inappropriate to use them. A promising simple
+method to do so is to tell participants that "small samples of observations tend
+to have a higher probability of error while larger samples tend to be more
+accurate", which is part of what participants in the enhanced statistics
+condition saw. Unfortunately, such simple instructions did not appear to work.
+
+Experiment 1 was limited because it only considered a *negative* anecdote; that
+is, a failed project. In real life, however, case studies often have a
+*positive* valence; that is, the story of a successful company. In fact, in
+business, it is possible that the anecdotes used are more likely to be positive
+because of survivorship bias. @jaramillo2019 found an anecdotal bias effect for
+negative but not positive anecdotes. This may be because the study concerned
+medical decisions and, in this domain being healthy may be the assumed default,
+and so there is more room to lose than gain. In Experiment 2 (discussed in the
+subsequent section) a positive anecdote was added to investigate whether
+anecdote valence would affect anecdotal bias. In business, possible gains and
+losses are both salient.
+
+Important to the normative use of anecdotes is its relative similarity to a
+target problem compared to the distribution of cases of which the anecdote is
+sampled. It is unclear whether the effects found in Experiment 1 were related to
+participants' perceptions of the type of sampling used to select the anecdotes.
+The instructions in Experiment 1 did not explain how the anecdote displayed to
+participants was chosen. Whether sampling is believed to be intentional or
+random has been shown to affect people's induction and decision-making [e.g.,
+@hayes2019]. Further, @kahneman1982 suggest that people are likely
+to be insensitive to distributional information. In the present experiments,
+participants' sampling assumptions may have changed the extent to which they
+used the anecdote in their decisions. For example, it may be rational to choose
+the anecdote over the aggregated data if (a) the anecdote was not sampled
+randomly from a pool of anecdotes, and (b) the anecdote had a greater similarity
+to the target project compared with other anecdotes in the pool in relevant
+ways. That is, if the anecdote were chosen because of its high relevance to the
+target project, it would be irrational to ignore it. In Experiment 1, it was
+unclear whether participants may have held these beliefs. To control for these
+assumptions, in Experiment 2, the instructions further clarified that the
+anecdote (a) was sampled randomly from a pool of anecdotes, and (b) was not
+significantly more similar to the target project than any of the other anecdotes
+in the pool.
+

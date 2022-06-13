@@ -1,0 +1,108 @@
+## Results
+
+This section reports only the data relevant to the Experiment 2 hypotheses. See
+Appendix \@ref(results-2-appendix) for manipulation check analyses.
+
+### Anecdotal Bias Depends on Anecdote Similarity
+
+To investigate whether anecdotal bias depended on anecdote similarity, the raw
+budget allocation values were transformed to create a dependant value that both
+expressed the magnitude of anecdotal bias and allowed equivalent comparison
+across valence conditions. To quantify the magnitude of anecdotal bias we
+calculated a difference score between allocations in the statistics only
+condition and the two anecdote & statistics conditions (high and low
+similarity). During the experiment all participants saw a statistics only
+condition in which the target project statistics were higher than those in the
+comparison project. However, this was only equivalent to what participants saw
+in the negative valence condition. Therefore, for the positive valence condition
+we calculated a difference score using the inverse value of the allocation in
+the statistics only condition---its difference from 100. Subsequently, the
+difference scores in the positive valence condition were multiplied by -1 to
+make the comparison between valence conditions equivalent. This means that a
+higher value indicates a stronger effect of similarity on the magnitude of
+anecdotal bias.
+
+As shown in Figure \@ref(fig:plot-2-allocation-difference), the main
+effect of similarity was significant and very large [@cohen1988],
+`r results_2$allocation_difference$similarity`. However, the similarity $\times$
+valence interaction was not significant,
+`r results_2$allocation_difference$similarity_valence`, as was the main effect
+of valence, `r results_2$allocation_difference$valence`. This provides evidence
+that anecdotal bias depends on anecdote similarity for both negative and
+positive anecdotes. Specifically, there was more influence of the anecdote when
+it is similar than when it is less similar. Participants appeared to be
+sensitive to the relevance of the anecdote to the target problem. However, the
+magnitude of this effect did not differ between negative and positive anecdotes.
+
+\newpage
+
+\blandscape
+
+(ref:plot-2-allocation-difference) Mean transformed allocation difference between the statistics only condition and the anecdote & statistics condition, by similarity and valence conditions. The positive valence allocations were transformed to create equivalent comparisons. Before creating the difference score, we calculated the difference of the statistics only allocation and 100 for positive valence. The positive valence difference score was then multiplied by -1. The horizontal dashed line indicates no effect of anecdote and values above this line show a stronger effect of the anecdote. Error bars represent 95% confidence intervals, calculated from the within-subjects standard errors using the method from @cousineau2014. Raw data are plotted in the background.
+
+```{r plot-2-allocation-difference, fig.width = 13, fig.height = 7, fig.cap = "(ref:plot-2-allocation-difference)"}
+plot_2$allocation_difference
+```
+
+\elandscape
+
+\newpage
+
+### Effect of Statistics
+
+As in Experiment 1, Experiment 2 investigated the extent to which statistical
+information influenced participants' allocations in the high similarity
+condition. As shown in Figure \@ref(fig:plot-2-allocation), only the
+main effect of evidence type was significant in the high similarity condition,
+`r results_2$allocation$similarity_high_anecdote$anecdote_between`. The main
+effect of valence was not significant,
+`r results_2$allocation$similarity_high_anecdote$valence`. as was the
+interaction,
+`r results_2$allocation$similarity_high_anecdote$anecdote_between_valence`. This
+provides evidence that participants' allocations were not solely influenced by
+anecdotes but were also influenced by the aggregated data. This effect was
+equivalent between negative and positive anecdotes.
+
+(ref:plot-2-allocation) Transformed mean allocation to the target project, by evidence type, similarity, and valence conditions. We calculated the difference of positive valence allocations from 100 to create equivalent comparisons. In mixed factorial designs, error bars cannot be used to make inferences by "eye" across all conditions. Therefore, error bars are not included. Raw data are plotted in the background.
+
+```{r plot-2-allocation, fig.cap = "(ref:plot-2-allocation)"}
+plot_2$allocation
+```
+
+### Relevance Ratings
+
+Regression analyses were conducted to determine the relationship between
+allocations and the follow-up relevance ratings.
+Figure \@ref(fig:plot-2-lm-allocation-relevance-specific-similarity)
+shows these data. In Experiment 1 we found that specific relevance ratings were
+related to project allocations, but only in the high similarity rating. This
+implied added evidence that participants were reasoning about the relevance of
+the projects based on the provided details, rather than just based on a surface
+association to the project type. In Experiment 2, while the specific relevance
+ratings for negative anecdotes showed the same trends as in Experiment 1, the
+interaction was not significant. Similarly, the ratings trends for positive
+anecdotes were as hypothesised, but their interaction not significant. It
+appears that specific relevance ratings were related to allocations, but only in
+the high similarity condition. Further, there were no significant associations
+with the general relevance ratings. This provides limited evidence that people
+were explicitly reasoning about the connection between the anecdote and target.
+
+(ref:plot-2-lm-allocation-relevance-specific-similarity) Mean allocation to the target project, by specific relevance rating, similarity condition, and valence condition. LOESS method was used for smoothing over trials and the shading represents 95% confidence intervals. Raw data are plotted in the background.
+
+```{r plot-2-lm-allocation-relevance-specific-similarity, fig.cap = "(ref:plot-2-lm-allocation-relevance-specific-similarity)"}
+plot_2$lm$allocation_relevance_specific_similarity
+```
+
+### Similarity Distribution Clarification
+
+In Experiment 2, participants were told that each anecdote they were considering
+was not significantly more similar to the target project than the other projects
+in the aggregated data. This addition to the instructions was designed to rule
+out the possibility that participants were assuming that the anecdote was unique
+in its similarity to the target. We did not explicitly manipulate this variable
+in a single experiment, but the anecdotal bias effect was no smaller in
+Experiment 2 than in Experiment 1. To make an equivalent comparison we
+considered the difference between the high similarity anecdote & statistics
+condition and the statistics only condition for negative anecdotes. In
+Experiment 1, `r results_1$allocation$allocation_combined_high_eta2`, whereas in
+Experiment 2, `r results_2$allocation$allocation_combined_high_eta2`.

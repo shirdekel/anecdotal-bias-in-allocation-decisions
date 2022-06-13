@@ -1,0 +1,101 @@
+---
+title             : "Anecdotal Bias in Allocation Decisions: The Role of Anecdote Similarity"
+shorttitle        : "Anecdotal Bias in Allocation Decisions"
+
+author: 
+  - name          : "Shir Dekel"
+    corresponding : yes    # Define only one corresponding author
+    affiliation   : "1"
+    address       : "Brennan MacCallum Building (A18) Camperdown, NSW 2006, Australia"
+    email         : "shir.dekel@sydney.edu.au"
+  - name          : "Micah B. Goldwater"
+    address       : "Brennan MacCallum Building (A18) Camperdown, NSW 2006, Australia"
+    email         : "micah.goldwater@sydney.edu.au"
+    affiliation   : "1"
+  - name          : "Dan Lovallo"
+    address       : "Abercrombie Building (H70) Camperdown, NSW 2006, Australia"
+    email         : "dan.lovallo@sydney.edu.au"
+    affiliation   : "2"
+
+affiliation:
+  - id            : "1"
+    institution   : "The University of Sydney, School of Psychology"
+  - id            : "2"
+    institution   : "The University of Sydney, Business School"
+
+authornote: |
+  Shir Dekel https://orcid.org/0000-0003-1773-2446.  
+
+  Micah B. Goldwater https://orcid.org/0000-0001-8052-9497.
+
+  Portions of this work comprised Shir Dekel's doctoral dissertation.
+
+  All data, analysis code, and research materials are available at
+  https://github.com/shirdekel/anecdotal-bias-in-allocation-decisions.
+
+abstract: (ref:abstract)
+  
+keywords          : "anecdotal bias, capital allocation, managerial decision-making, similarity"
+wordcount         : "11117"
+
+bibliography      :
+  - "references.bib"
+  - "r-references.bib"
+
+floatsintext      : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : no
+mask              : no
+draft             : no
+
+linkcolor         : "NavyBlue"
+link-citations    : yes
+
+csl               : "apa.csl"
+
+header-includes:
+  # %% Avoid extra spacing due to figures
+  - \raggedbottom
+  # Fixes "and &" in title page. From:
+  # https://github.com/crsh/papaja/issues/342#issuecomment-882474297
+  - \renewcommand\author[1]{}
+  - \renewcommand\affiliation[1]{}
+  - \authorsnames[1, 1, 2]{Shir Dekel, Micah B. Goldwater, Dan Lovallo}
+  - \authorsaffiliations{{The University of Sydney, School of Psychology}, {The University of Sydney, Business School}}
+  # % Manually landscape from https://stackoverflow.com/a/27334272/13945974
+  - \usepackage{pdflscape}
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
+documentclass     : "apa7"
+classoption       : "man, donotrepeattitle"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  out.width = "100%"
+)
+```
+
+(ref:abstract) Both anecdotes and aggregated data impact decision-making but it
+is unclear how the two are integrated when making decisions. Typically, it is
+normative to focus on aggregated data over an anecdote when the two appear in
+conflict. However, the similarity of each data point to the target problem is
+also important because a highly similar anecdote may be more informative than
+the rest of the cases in the data. The present study is the first to investigate
+whether people's decisions are influenced by the similarity of an anecdote to
+the target problem while considering the similarity of the anecdote to the other
+cases within the aggregated data. When reasoning with both anecdotes and
+aggregated data, the results show that anecdotes influence participants'
+decisions only when they are similar to the target problem. However, when
+participants were given information about the equivalent similarity between the
+anecdote and the cases in the larger set of data, they showed the same pattern
+of anecdotal influence as when they had no such information. Therefore, people
+seem to appropriately use an anecdote from a set of cases based on its
+similarity to the target case, but do not understand the importance of its
+similarity to the other cases in the set.

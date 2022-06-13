@@ -1,0 +1,84 @@
+## Results {#results-anecdotes-1}
+
+### The Effect of Similarity on Anecdotal Bias
+
+Anecdotal bias was tested by comparing the statistics only condition with both
+the high- and low-similarity anecdote & statistics conditions (see
+Figure \@ref(fig:plot-1-allocation-combined)). The omnibus one-way
+ANOVA of these three conditions was significant,
+`r results_1$allocation$condition`.
+Evidence of anecdotal bias is seen when participants allocate more to the
+statistics only condition than to the anecdote & statistics condition. Finding
+this effect implies that the anecdote influenced participants to reduce their
+allocation because the anecdote was unsuccessful. Planned comparisons show that
+participants in the statistics only condition allocated more to the target
+project compared with participants in the high-similarity anecdote & statistics
+condition,
+`r results_1$allocation$Combinedhigh_statisticsNA`; but not
+the low-similarity anecdote with statistics condition,
+`r results_1$allocation$Combinedlow_statisticsNA`. These findings
+provide evidence of anecdotal bias in the high similarity condition only.
+
+(ref:plot-1-allocation-combined) Mean allocation to the target project for the statistics only condition and the two anecdote & statistics conditions. Error bars represent 95% confidence intervals. Raw data are plotted in the background.
+
+```{r plot-1-allocation-combined, fig.cap = "(ref:plot-1-allocation-combined)"}
+plot_1$allocation_combined
+```
+
+### The Effect of Enhanced Statistics
+
+In the enhanced statistics condition, we add an explanation of scientific
+thinking to hint that aggregated data is likely to be more reliable than
+anecdotes. The effect of enhanced statistics was investigated by testing the
+interaction of anecdote similarity and evidence type (anecdote & statistics and
+anecdote & enhanced statistics conditions, excluding the anecdote only and
+statistics only conditions). As shown in
+Figure \@ref(fig:plot-1-allocation), the two-way interaction was not
+significant, `r results_1$allocation$Combined_enhanced_High_low`. Further, the
+difference between the anecdote & statistics condition and the anecdote &
+enhanced statistics condition (averaged over similarity conditions) was also not
+significant, `r results_1$allocation$Combined_enhanced`. This suggests that
+providing participants with information about how to think statistically is not
+sufficient to facilitate a focus on statistics.
+
+(ref:plot-1-allocation) Mean allocation to the target project, by anecdote similarity and evidence type conditions (excluding the statistics only condition). Error bars represent 95% confidence intervals. Raw data are plotted in the background.
+
+```{r plot-1-allocation, fig.cap = "(ref:plot-1-allocation)"}
+plot_1$allocation
+```
+
+### The Effect of Statistics
+
+To identify the influence of statistics on participants' allocations we compared
+the anecdotes only condition to the high similarity anecdote & statistics
+condition (see Figure \@ref(fig:plot-1-allocation)). This tests
+whether seeing the anecdote made participants disregard the statistics or
+whether the statistics still influenced their decisions. We found that
+participants allocated more in the high similarity anecdote & statistics
+condition compared with the anecdote only condition,
+`r results_1$allocation$High_Anecdote_combined`. This provides evidence of partial
+anecdotal bias because the anecdote & statistics condition was both lower than
+the statistics only condition (shown above) and higher than the anecdote only
+condition.
+
+### Relevance Ratings
+
+Regression analyses were conducted to determine the relationship between
+allocations and the follow-up relevance ratings. As shown in
+Figure \@ref(fig:plot-1-lm-allocation-relevance-specific-alignment),
+the specific relevance ratings interacted with similarity condition, 
+`r results_1$lm$allocation_relevance_specific_alignment`. It appears that
+specific relevance ratings were related to allocations, but only in the high
+similarity condition. That is, those in the high similarity condition allocated
+less to the target project the more relevant they considered the negative
+anecdote. Furthermore, there were no significant associations with the general
+relevance ratings. This suggests that participants applied reasoning to the
+connection between the anecdote and the target project as opposed to simply
+reacting to the failed project and associating that with that project's
+industry.
+
+(ref:plot-1-lm-allocation-relevance-specific-alignment) Mean allocation to the target project, by specific relevance rating and similarity condition. LOESS method was used for smoothing over trials and the shading represents 95% confidence intervals. Raw data are plotted in the background.
+
+```{r plot-1-lm-allocation-relevance-specific-alignment, fig.cap = "(ref:plot-1-lm-allocation-relevance-specific-alignment)"} 
+plot_1$lm$allocation_relevance_specific_alignment
+```

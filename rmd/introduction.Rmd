@@ -1,0 +1,245 @@
+# Anecdotal Bias in Capital Allocation Depends on Anecdote Similarity
+
+A good story is often more persuasive than data. While usually harmless in daily
+settings, poor judgement arising from a bias towards anecdotal evidence can lead
+to large-scale negative consequences. Perhaps the most prominent example of such
+an error in judgement is the belief that a vaccine causes a certain disorder
+based on isolated stories, despite contradictory scientific evidence. An
+analogous error exists in settings such as managerial decision-making. This is a
+domain that is useful to study this bias because in business, managers use
+analogies, known as *case studies*, as a part of their strategic
+decision-making. Case studies are examples of previous situations considered
+similar by the decision-maker and are used to draw inferences about a target
+problem [@gavetti2005; @gavetti2005a]. Case studies are known as *anecdotes*
+when comparing them with aggregated data. It is unclear how people balance the
+use of anecdotes and aggregated data in these settings.
+
+Many businesses use case studies to inform their decisions but often struggle to
+use them properly [@gavetti2005a]. This may be attributable to the prominence of
+companies that are either highly successful or highly unsuccessful. That is,
+people are often uninterested in average outcomes but are captivated by both
+positive and negative extreme outcomes. The increased salience of an anecdote
+may increase its influence over that of useful statistical data. Further,
+increased anecdotal salience may also shift attention away from relational
+similarities most relevant to understanding the underlying causes of success and
+failure in the case studies in favour of more surface similarities between an
+anecdote and current problem. Both issues may explain the improper use of case
+studies.
+
+The first consideration when using a case study is its merit relative to
+available aggregated statistical data. That is, if the case study is a single
+data point in a set of other equally relevant cases, then using the statistical
+properties of the larger sample is more inferentially informative than using a
+single case from within the sample (unlike perhaps when the single case is
+somehow the most relevant example from the sample). Despite the utility and
+availability of large sample data, research has shown that people often prefer
+anecdotal evidence over statistical data [@reinard1988; @shen2015;
+@jaramillo2019; @freling2020].
+
+However, if this larger sample is not available (or is ignored), then the second
+consideration when using a case study is the extent of its similarity to the
+target problem. Research on the psychology of similarity judgements
+distinguishes between surface and relational similarity [e.g., @gentner1983].
+The consensus of this research is that the more conceptual structures that two
+cases share, the more useful they are in decision-making [@markman1995;
+@lassaline1996]. Therefore, case studies that are similar to a target problem on
+a merely surface level are less useful than those that are related through a
+shared conceptual structure.
+
+Previous research has considered the role of similarity and analogical reasoning
+in business-related decision-making [e.g., @gavetti2005; @lovallo2012]. Others
+have investigated the influence of anecdotes in capital allocation decisions and
+the impact of anecdote similarity on their persuasiveness (summarised below).
+Capital allocation is the process of distributing money within an organisation
+and offers a useful paradigm to study anecdotes and similarity. Case studies are
+important in capital allocation because that is how decisions are often
+presented to executives. Further, anecdote similarity is an important factor in
+capital allocation because business unit functions within a firm can be quite
+unrelated. For instance, two of General Electric's divisions include GE Aviation
+and GE Healthcare. This such a firm may rely more on cases from other companies
+to compare to their projects. However, it is unclear to what extent an
+anecdote's similarity to the target problem will affect its influence on capital
+allocation decisions. Also it is unclear if this effect would depend on whether
+the anecdote is of a successful or unsuccessful case (anecdote valence). Recent
+evidence from medical decision-making suggests negative anecdotes have greater
+effect [@jaramillo2019]. Further, when balancing the use of aggregated data and
+an anecdote, it is unclear whether people will be sensitive to information about
+the distribution of the aggregated data from which the anecdote was sampled.
+Normative use of anecdotes would consider this information.
+
+Therefore, we considered three novel questions: (a) does the anecdotal bias
+effect depend on the similarity of the anecdote to the target project? (b) Do
+people consider verbal sample distribution information to help inform their
+decisions? And (c) is the magnitude of this effect different between negative
+and positive anecdotes?
+
+## Anecdotal Bias
+
+Anecdotal bias refers to the over-weighting of anecdotal evidence as compared to
+statistical evidence on people's beliefs. Journalists, for instance, are well
+aware of the power of anecdotes. An analysis of approximately 29,000 New York
+Times editorials showed a reliance on anecdotes to drive arguments
+[@alkhatib2017]. While some studies have concluded that statistics are more
+persuasive than anecdotes [e.g., @allen1997; @hornikx2005; @hoeken2001] and
+others provided more cautious conclusions [@winterbottom2008], a number have
+found evidence for anecdotal bias [e.g., @jaramillo2019; @reinard1988;
+@shen2015; @ratcliff2020; @reinhart2006]. @zebregs2015 suggest that this
+disparity in findings might be attributable to statistics affecting beliefs and
+attitudes, and anecdotes affecting intention. A more recent meta-analysis of 61
+studies found that, overall, statistical evidence is more persuasive than
+anecdotal evidence [@freling2020]. However, this advantage for statistics may be
+due to experimental methods where participants are presented with situations to
+evaluate that have no direct relevance to their lives. The meta-analysis found
+that people tend to prefer anecdotal evidence over statistical data when the
+stakes are more emotional, medical, or relevant to the decision-maker. In
+business, decisions are clearly relevant to the decision-maker because they can
+mean the difference between a promotion or getting fired. Even so, experimental
+research shows that anecdotes that add no additional information to co-presented
+statistics may still influence people's judgement, and further show that all
+anecdotes are not created equal in how they affect judgments [e.g.,
+@jaramillo2019]. This suggests experimental methods, such as those used in the
+current research, are still appropriate to identify how anecdotes influences
+judgment, and if anything, *under-estimate* the size of the effect in the
+real-world where people consider decisions relevant to themselves.
+
+## Anecdotal Bias in Business
+
+It is important to investigate anecdotal bias in business contexts because of
+its implications for managers' use of similar "comparables" when making
+strategic decisions. There are many cases of managers successfully using
+analogies from anecdotal cases but also of failures to analogise correctly
+[@gavetti2005; @gavetti2005a]. There is very little experimental research on
+anecdotal bias in business, but the existing work finds clear evidence of the
+effect.
+
+@wainberg2013 gave a sample of managers and other professionals a choice between
+two audit firms, which varied in terms of their audit deficiencies for various
+clients. The experiment was designed in such a way that the statistical evidence
+favoured one firm, while the anecdotal evidence favoured the other firm.
+Participants in the *anecdotes only* condition were given anecdotal examples of
+firm deficiencies, while those in the *anecdotes & statistics* condition were
+given the same anecdotal examples as well as the number of clients and
+deficiencies found and the proportions of these values.[^wainberg2013]
+Participants in the *statistics only* condition were given this proportions
+information as well as the number of clients without deficiencies but no
+detailed examples of deficiencies.
+
+[^wainberg2013]: This condition is referred to as anecdotes & enhanced
+statistics in [@wainberg2013] but was changed to anecdotes & statistics here for
+clarity. Their "anecdotes and statistics" condition had less statistical
+information and we decided to just use the condition that had more information.
+
+@wainberg2013 measured the percentage of participants who chose firms favoured
+by the statistical data, finding evidence of anecdotal bias. Participants in the
+anecdotes & statistics condition were less likely to choose the firm favoured by
+statistical data compared with those in the statistics only condition. This
+shows evidence of anecdotal bias because participants ignored contradictory
+statistical data. They also found a difference between the anecdotes &
+statistics condition and the anecdotes only condition, which implies that the
+anecdotal bias effect was "partial". That is, the presented statistics played
+some role in influencing participants' choice of firm. A "complete" effect would
+have occurred if there was no difference between the conditions, meaning that
+statistics would have not played a role in influencing choice.
+
+The other important finding in this work is that anecdotal bias was reduced by
+highlighting relevant statistical features and providing an explanation of
+statistical inference. This is important because it suggests that potential
+psychological biases can be reduced with a reframing of provided information and
+an explanation of relevant statistical concepts.
+
+@wainberg2018 conducted a similar study to that of @wainberg2013 but with a
+capital budgeting task as opposed to a binary choice. Participants had to choose
+between three production line machines for a mid-sized company that prints
+circuit boards. The statistical data suggested that Machine A was better than
+Machine B, and Machine B was better than Machine C. Participants were given only
+statistical information or statistical information along with an anecdote. The
+anecdote was in the form of an email from a colleague who recommended against
+Machine A (the best option). Similar to @wainberg2013, participants were
+assigned to *anecdote & statistics* and *statistics only* conditions. In another
+condition, participants were told to "think like a scientist" and received an
+explanation of the importance of statistical inference.
+
+@wainberg2018 found evidence for anecdotal bias. Including a contradictory
+anecdote alongside statistical evidence (the anecdote & statistics condition)
+reduced the proportion of participants who chose Machine A. The study also found
+that the addition of instructions that emphasised scientific thinking reduced
+this bias. Unlike @wainberg2013, @wainberg2018 could not determine whether the
+anecdotal bias was complete or partial because there was no anecdote only
+condition. Further, neither work considered the effect of the anecdote's
+similarity to the target problem, nor whether this similarity differed to that
+of the other cases in the aggregated data set. In the present study we test an
+anecdote only condition, consider the anecdote's similarity to the target
+problem, and investigate whether participants are sensitive to information about
+the distribution of similarity in the aggregated data.
+
+## Effect of Similarity
+
+Arguably, the extent of one's reliance on an anecdote should depend on its
+similarity to the target problem. Previous work has examined the importance of
+weighting previous cases according to their similarity to the present situation
+[@gilboa1995; @lovallo2012]. For instance, consider a medical treatment with
+contradictory statistical and anecdotal evidence; that is, a large-scale
+aggregated study has found that the treatment has 99% efficacy, while someone
+reports on social media that they became sick as a side-effect of the treatment.
+While the decision to use the treatment should be informed more by the
+aggregated data than by the anecdotal data, an individual may have reason to be
+concerned if the person who became sick was their identical twin. Therefore, the
+inference that the individual may also need to be cautious about the treatment
+arises from a specific causal model based on the shared genetics of the two
+cases.
+
+There have been mixed results regarding the effect of anecdote similarity on
+people's use of anecdotes. @hoeken2009 [Study 3] found evidence for the effect
+of similarity on the persuasiveness of a variety of anecdotes. As well as
+manipulating whether participants received a claim supported by anecdotal or
+statistical evidence, they manipulated whether the anecdotal evidence was
+similar or dissimilar to the claim that it was supporting. They found that
+similar anecdotes were more persuasive than dissimilar anecdotes. Using a
+student sample, @hoeken2001 did not find evidence for the effect of similarity
+to a local government proposal. Similarly, @hornikx2018 considered the effect of
+similarity on anecdotal bias in local government policy decision-making. The
+researchers did not find an effect for similarity or for anecdotes. However,
+they measured persuasiveness, whereas concrete allocation of funds may better
+show the influence of anecdotes. Further, the content of all the anecdotes that
+both Hoeken and Hornikx presented their participants was the same. Therefore, it
+is unclear if their lack of similarity effect was due to the specific scenario
+participants were presented. The present study clarifies this by testing a
+similarity effect with concrete decisions and multiple anecdote domains.
+
+Apart from the need to determine the effect of similarity on the anecdotal bias
+effect, it is important to clarify how such an effect might work. Research on
+analogical reasoning has distinguished between simple surface similarity and
+deeper relational similarity [@gentner1983]. As mentioned above, one's use of
+an anecdote should depend on the extent to which it is associated by an
+underlying causal mechanism relevant to the target problem or mere surface
+similarity. Imagine a manager of a multi-divisional company deciding on the
+allocation of capital between an oil well project and a technology project.
+Would hearing of a recent failed oil well project at another company influence
+the manager's allocation decision? If so, would it influence the manager's
+decision because the anecdote has similarities to the target oil well project
+(surface similarity)? Or would the manager seek out the underlying reason for
+the failure of the other company's oil well project to identify whether it is
+relevant to the target oil project (relational similarity)? The experiments
+presented in this study investigated whether the anecdotal bias effect arose
+from causal inductive reasoning or merely the surface similarity with the target
+project. This distinction may help address the mixed findings mentioned above,
+as it is unclear if the previous studies manipulated surface or relational
+similarity. Often, "anecdotal thinking" is a pejorative term, assuming it is
+unsophisticated and superficial. However, if the use of anecdotes is based on
+shared underlying causal mechanisms, and considers the relative similarity of
+the anecdote to the distribution of cases the anecdote is a part of, then this
+suggests a more sophisticated way of thinking [@gavetti2005].
+
+## Experiment Summary
+
+Experiment 1 investigates whether people are sensitive to the similarity of an
+anecdote to the target problem. Further, it tests whether providing participants
+with simple instructions will encourage them to aggregated data over an
+anecdote. In Experiment 2 we tell participants that the anecdote is as similar
+to the target problem as the rest of the aggregated data to see if they
+correctly disregard it. Previous research suggests that people may respond
+differently to a negative anecdote, which is an example of an unsuccessful case,
+compared to a positive anecdote, which is an example of a successful case. In
+line with this, Experiment 1 only uses negative anecdotes. However, Experiment 2
+further examines this distinction by contrasting positive with negative
+anecdotes.

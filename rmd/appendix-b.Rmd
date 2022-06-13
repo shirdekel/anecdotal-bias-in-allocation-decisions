@@ -1,0 +1,155 @@
+# Experiment 2
+
+## Hypothesised Effects {#hypothesised-effects-anecdotes-2}
+
+Figures \@ref(fig:plot-simulation-2-negative)
+and \@ref(fig:plot-simulation-2-positive) show the simulated data for
+the negative and positive valence conditions, respectively. These figures are
+different from the equivalent figures in the main text. Here, the same
+statistics only value was used for both valence conditions, whereas in the main
+text the relevant values for each condition were used. Further, the main text
+reports the difference score from the relevant statistics only values, whereas
+here the raw means are shown.
+
+(ref:plot-simulation-2-negative) Anecdotes Experiment 2 predicted data for the negative valence condition
+
+```{r plot-simulation-2-negative, fig.cap = "(ref:plot-simulation-2-negative)"}
+anecdotes2::plot_simulation$negative
+```
+
+(ref:plot-simulation-2-positive) Anecdotes Experiment 2 predicted data for the positive valence condition
+
+```{r plot-simulation-2-positive, fig.cap = "(ref:plot-simulation-2-positive)"}
+anecdotes2::plot_simulation$positive
+```
+
+
+## Power Analysis {#power-analysis-2}
+
+A power analysis was conducted through simulation of the effects implied by the
+hypotheses in Experiment 2. Data were simulated with the same mean values as
+Experiment 1 for the effects that were previously significant (i.e., similarity,
+statistics, and interaction effects), and no effect for the differences that
+were non-significant (as shown in
+Figures \@ref(fig:plot-simulation-2-negative)
+and \@ref(fig:plot-simulation-2-positive)). The null effect was
+analysed using the two one-sided tests (TOST) procedure, or *equivalence*
+testing [@lakens2018], and setting the smallest effect size of interest to the
+smallest difference that leads to a significant equivalence between the combined
+low similarity and statistics only conditions in Experiment 1.
+Figure \@ref(fig:power-analysis-2) shows the results of this analysis,
+which suggested a total sample size of `r anecdotes2::power$n_total`
+(`r anecdotes2::power$n` $\times$ 2).
+
+\newpage
+
+\blandscape
+
+(ref:power-analysis-2) Anecdotes Experiment 2 power curve. Labels indicate lowest sample size above 80% power.
+
+```{r power-analysis-2, fig.width = 13, fig.height = 7, fig.cap = "(ref:power-analysis-2)"}
+anecdotes2::power$power_curve
+```
+
+\elandscape
+
+\newpage
+
+## Instructions {#instructions-materials-2-appendix}
+
+Figure \@ref(fig:general-instructions-2) shows the general
+instructions all participants received, and
+Figures \@ref(fig:specific-instructions-anecdote-only-2), \@ref(fig:specific-instructions-combined-2),
+and \@ref(fig:specific-instructions-statistics-only-2) show
+the condition-specific instructions.
+
+(ref:general-instructions-2) General instructions for Experiment 2.
+
+```{r general-instructions-2, fig.cap = "(ref:general-instructions-2)"}
+file.path(
+  materials_2,
+  "general_instructions.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-anecdote-only-2) Experiment 2 specific instructions for those in the anecdotes only condition.
+
+```{r specific-instructions-anecdote-only-2, fig.cap = "(ref:specific-instructions-anecdote-only-2)"}
+file.path(
+  materials_2,
+  "specific_instructions_anecdote_condition_anecdote_only.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-combined-2) Experiment 2 specific instructions for those in the combined condition.
+
+```{r specific-instructions-combined-2, fig.cap = "(ref:specific-instructions-combined-2)"}
+file.path(
+  materials_2,
+  "specific_instructions_anecdote_condition_combined.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:specific-instructions-statistics-only-2) Experiment 2 specific instructions for those in the statistics only condition.
+
+```{r specific-instructions-statistics-only-2, fig.cap = "(ref:specific-instructions-statistics-only-2)"}
+file.path(
+  materials_2,
+  "specific_instructions_anecdote_condition_statistics_only.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+## Follow-up Questions {#follow-up-materials-2}
+
+Figure \@ref(fig:follow-up-2) shows an example of the
+follow-up questions.
+
+(ref:follow-up-2) An example of one of the follow-up question displays in Experiment 2.
+
+```{r follow-up-2, fig.cap = "(ref:follow-up-2)"}
+file.path(
+  materials_2,
+  "follow_up_1.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+## Interstitial Display {#interstitial-materials-2}
+
+Figure \@ref(fig:interstitial-2) shows an example of one of
+the interstitial displays.
+
+(ref:interstitial-2) An example of an interstitial display in Experiment 2.
+
+```{r interstitial-2, fig.cap = "(ref:interstitial-2)"}
+file.path(
+  materials_2,
+  "interstitial_1.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+## Similarity Manipulation Check {#results-2-appendix}
+
+
+The similarity manipulation worked as expected, with the negative anecdote only
+low similarity condition being allocated significantly more than those in the
+high similarity condition,
+`r results_2$allocation$anecdotes_only_similarity$valence_negative`. For
+positive anecdotes, participants allocated more to the high similarity condition
+than those in the low similarity condition,
+`r results_2$allocation$anecdotes_only_similarity$valence_positive`. Evidence
+for the similarity manipulation working was also seen in the rating data.
+Participants rated anecdotes in the high similarity condition as more similar to
+the target than those in the low similarity condition,
+`r results_2$follow_up$similarity_rating_similarity`.

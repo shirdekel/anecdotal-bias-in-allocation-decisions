@@ -1,0 +1,126 @@
+## Method
+
+### Participants
+
+`r descriptives_2$apa` Table \@ref(tab:condition-allocation-2)
+shows the allocation of participants to the different conditions. Anecdote
+similarity and valence were manipulated within subjects. Therefore, each
+participant was assigned to one of two between-subjects evidence type conditions
+(anecdote only and anecdote & statistics) and saw five displays (statistics
+only, and one of each of the four similarity and valence conditions).
+Appendix \@ref(power-analysis-2) describes the power analysis
+conducted to arrive at this sample size.
+
+```{r condition-allocation-2}
+descriptives_2$condition_allocation_table %>%
+  apa_table("Experiment 2 group allocation.")
+```
+
+### Materials
+
+#### Instructions
+
+Participants were shown similar instructions to those in Experiment 1. The
+general instructions page included a test of the basic information expressed in
+the instructions. This test also functioned as an attention check. As in
+Experiment 1, participants were also shown instructions that were specific to
+their condition. These were shown on the same page as the rest of the project
+display, above the case study and focal projects. The instructions clarified
+that the anecdote had been randomly sampled and that all anecdotes in the pool
+were equally similar to the target project.
+Appendix \@ref(instructions-materials-2-appendix) shows the
+instructions used in Experiment 2.
+
+#### Allocation Task {#allocation-2}
+
+As in Experiment 1, the allocation task included a table describing the two
+focal projects and (apart from the statistics only condition) a description and
+analysis of an anecdote.
+Figures \@ref(fig:allocation-anecdote-valence-negative-similarity-low-2)
+and \@ref(fig:allocation-target-valence-negative-similarity-low-2)
+show the anecdote and focal projects, respectively, for the negative valence,
+low similarity condition.
+Figures \@ref(fig:allocation-anecdote-valence-positive-similarity-high-2)
+and \@ref(fig:allocation-target-valence-positive-similarity-high-2)
+show the anecdote and focal projects, respectively, for the positive valence,
+high similarity conditions. In the statistics only condition, participants were
+only shown the focal projects display.
+
+The following were counterbalanced: (a) project variation (five latin square
+variations), which is the association of each display content with each
+within-subject condition; and (b) anecdote variation (two variations), which is
+the association of each project display and being either the target or
+comparison project. Table column order and project display order were
+randomised.
+
+(ref:allocation-anecdote-valence-negative-similarity-low-2) An example of the anecdote display in the negative valence, low similarity condition of Experiment 2.
+
+```{r allocation-anecdote-valence-negative-similarity-low-2, fig.cap = "(ref:allocation-anecdote-valence-negative-similarity-low-2)"}
+file.path(
+  materials_2,
+  "project_allocation_anecdote_valence_negative_similarity_low.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:allocation-target-valence-negative-similarity-low-2) An example of the focal projects in the negative valence, low similarity condition of Experiment 2. Here, Project 1 was the target project and Project 2 was the comparison project.
+
+```{r allocation-target-valence-negative-similarity-low-2, fig.cap = "(ref:allocation-target-valence-negative-similarity-low-2)"}
+file.path(
+  materials_2,
+  "project_allocation_target_valence_negative_similarity_low.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:allocation-anecdote-valence-positive-similarity-high-2) An example of an anecdote display in the positive valence, high similarity condition of Experiment 2.
+
+```{r allocation-anecdote-valence-positive-similarity-high-2, fig.cap = "(ref:allocation-anecdote-valence-positive-similarity-high-2)"}
+file.path(
+  materials_2,
+  "project_allocation_anecdote_valence_positive_similarity_high.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+(ref:allocation-target-valence-positive-similarity-high-2) An example of the focal projects in the positive valence, high similarity condition of Experiment 2. Here, Project 2 was the target project and Project 1 was the comparison project.
+
+```{r allocation-target-valence-positive-similarity-high-2, fig.cap = "(ref:allocation-target-valence-positive-similarity-high-2)"}
+file.path(
+  materials_2,
+  "project_allocation_target_valence_positive_similarity_high.png"
+) %>%
+  image_read() %>%
+  image_trim()
+```
+
+#### Interstitial Page
+
+Prior to the display, participants were shown an interstitial page, which was
+used to (a) introduce the display and (b) check the participant's attention
+(given that no input was required, participants could easily skip the page
+without reading the text). See
+Appendix \@ref(interstitial-materials-2).
+
+#### Follow-up Questions
+
+Participants were shown similar follow-up questions as in Experiment 1, except
+that in Experiment 2, rating scales were 1--7 instead of 1--6. See
+Appendix \@ref(follow-up-materials-2) for a sample display of the
+follow-up questions.
+
+### Procedure
+
+Participants were introduced to the study via the general instructions page.
+They were then shown five sets (presented in a random order) containing three
+pages each: an interstitial page, a page showing the allocation task, and a page
+with follow-up questions (except for the statistics only condition, in which
+participants were not shown the follow-up questions page). The interstitial
+pages introduced each display and checked participants' attention to the task.
+Each allocation task page contained specific instructions relevant to the
+condition followed by the anecdote analysis and description, and the description
+of the two focal projects. The only exception was the statistics only display,
+for which there was no anecdote description or analysis.
